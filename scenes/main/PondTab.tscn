@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="PondTab" type="Control"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 20
+alignment = 1
+
+[node name="LevelContainer" type="HBoxContainer" parent="VBoxContainer"]
+alignment = 1
+
+[node name="LevelLabel" type="Label" parent="VBoxContainer/LevelContainer"]
+text = "Pond Level: 1"
+custom_fonts/font = SubResource("Font_1")
+
+[node name="SummonContainer" type="VBoxContainer" parent="VBoxContainer"]
+custom_constants/separation = 10
+alignment = 1
+
+[node name="SummonButton" type="Button" parent="VBoxContainer/SummonContainer"]
+text = "소환 (Dust 100)"
+size_flags_horizontal = 3
+custom_styles/normal = SubResource("ButtonStyle")
+custom_styles/hover = SubResource("ButtonStyleHover")
+
+[node name="LevelUpContainer" type="VBoxContainer" parent="VBoxContainer"]
+custom_constants/separation = 10
+alignment = 1
+
+[node name="LevelUpButton" type="Button" parent="VBoxContainer/LevelUpContainer"]
+text = "레벨업 (Sacred Water)"
+size_flags_horizontal = 3
+custom_styles/normal = SubResource("ButtonStyle")
+custom_styles/hover = SubResource("ButtonStyleHover")
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource("res://assets/fonts/default_font.ttf")
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color(0.2, 0.4, 0.8, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4, 0.6, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color(0.3, 0.5, 0.9, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5, 0.7, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8

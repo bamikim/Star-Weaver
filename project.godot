@@ -1,0 +1,19 @@
+[application]
+config/name="StarWeaver"
+config/description="StarWeaver MVP"
+run/main_scene="res://scenes/main/MainScene.tscn"
+
+[rendering]
+quality/driver/driver_name="GLES3"
+
+[display/window]
+size/width=1080
+size/height=1920
+stretch/mode="canvas_items"
+stretch/aspect="keep"
+
+[autoload]
+GameManager="res://scripts/autoload/GameManager.gd"
+DataManager="res://scripts/autoload/DataManager.gd"
+BattleManager="res://scripts/autoload/BattleManager.gd"
+PondManager="res://scripts/PondManager.gd"
